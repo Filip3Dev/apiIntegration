@@ -42,6 +42,7 @@
     "md5": "^2.3.0",
     "mongoose": "^5.9.16",
     "mongoose-slug-generator": "^1.0.4",
+    "node-cron": "^2.0.3",
     "nodemailer": "^6.4.11",
     "nodemailer-express-handlebars": "^4.0.0",
     "uuid": "3.3.2"

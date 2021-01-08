@@ -7,6 +7,7 @@ const logger = require('koa-logger')();
 
 const errorHandler = require('./middleware/error.middleware');
 const api = require('./api');
+const cron = require('./utils/cron');
 const { databaseConfig } = require('./config');
 const mongoose = require('mongoose');
 const server = new Koa();
@@ -33,5 +34,6 @@ server
  * Apply to our server the api router
  */
 api.applyApiMiddleware(server);
+cron.startCron();
 
 module.exports = server;
